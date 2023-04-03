@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <p>Light-Controlled System</p>
+        <ul id="menu">
+            <li class="li"><a href="index.html">Home</a></li>
+            <li class="li"><a href="Components.html">Components</a></li>
+            <li class="li"><a href="Model.html">Model</a></li>
+            <li class="li"><a href="#">Service</a></li>
+            <li id="login"><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>Save Energy</h1>
+        <p>Use Eco Friendly Energy</p>
+        <p>TO save Nature</p>
+        <button id="btn">Model</button>
+    </div>
+
+    <script>
+        document.querySelector('#btn').addEventListener("click", () => {
+            window.location.replace("Model.html");
+    })
+
+    </script>
+</body>
+</html>

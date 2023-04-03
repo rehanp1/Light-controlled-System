@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.model{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:14rem ;
+}
+
+.model .smartphone {
+    position: relative;
+    width: 15rem;
+    height: 25rem;
+    margin: -15rem 5rem 0rem -5rem;
+    border: .5rem solid black;
+    border-top-width: 2rem;
+    border-bottom-width: 2rem;
+    border-radius: 2rem;
+    background-color: rgb(203, 214, 219);
+}
+
+.model .smartphone::before {
+    content: ' ';
+    display: block;
+    width: 4rem;
+    height: .5rem;
+    background-color: rgb(142, 141, 141);
+    border-radius: 1rem;
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.model .smartphone::after {
+    content: ' ';
+    display: block;
+    width: 1.7rem;
+    aspect-ratio: 1/1;
+    background-color: rgb(142, 141, 141);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1.8rem;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.model .smartphone #nav {
+    font-size: 0.5rem;
+    padding: .3rem;
+    margin-bottom: 5em;
+    background-color: #acb3b3;
+    
+}
+
+.model .smartphone #nav i{
+    font-size: .9rem;
+    color: #0f93ae;
+    padding-left: .4rem;
+    position: relative;
+}
+
+.model .smartphone #nav #connect {
+    font-size: 1rem;
+    margin-left: .5rem;
+    color: #0f93ae;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.model .smartphone #nav .connectivity{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(38, 35, 35);
+    top:2rem;
+    z-index: -1;  
+}
+
+
+
+.model .smartphone #nav .connectivity span{
+    padding: .3rem;
+    font-size: 1rem;
+    color: rgb(143, 223, 230);
+    margin: .1rem;
+}
+
+.model .smartphone #nav .connectivity span:hover{
+    background-color: #363939;
+    cursor: pointer;
+}
+
+.model .smartphone #nav .connectivity span i{
+    padding-right:.3rem;
+    color: rgb(143, 223, 230);
+}
+
+.model .smartphone .content {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+
+}
+
+.model .smartphone .content p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #0f93ae;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#onbtn,
+#offbtn {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+#mybulb{
+    width: 15rem;
+    margin: 5rem 0rem;
+    
+}
+
+.circuit{
+    width: 50%;
+    position: relative;
+    bottom: 0rem; right: -5rem;
+}
+
+.circuit #my-ckt{
+    width: 110%;
+}
+
+.circuit #mybulb{
+    position: absolute;
+    width: 15%;
+    top: -16.6rem; right: 9.8rem;
+}
+
+.circuit #bluetooth-light{
+    width: 1%;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    position: absolute;
+    top:37%; left: 49.2%;
+    border-radius: 40%;
+    animation: blinking .3s infinite;
+}
+
+@keyframes blinking{
+    0% {background-color: transparent;}
+    50%{background-color: rgb(255, 204, 0);}
+    100% {background-color: red;}
+  }
+  
+
+.circuit #arduino-light{
+    width: 1.1%;
+    aspect-ratio: 1/.6;
+    background-color: transparent;
+    position: absolute;
+    bottom:10.32rem; left: 6.5rem;
+    border-radius: 40%;
+    animation: blinking1 .3s infinite;
+}
+
+@keyframes blinking1{
+    0% {background-color: transparent;}
+    50%{background-color: yellow;}
+    100% {background-color: red;}
+  }
+

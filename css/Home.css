@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("images/whitebg.jpg") no-repeat;
+    background-size: contain;
+}
+
+div {
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4077a2;
+}
+
+div h1 {
+    font-size: 4rem;
+    margin-bottom: .6rem;
+}
+
+div p {
+    font-size: 1.5rem;
+}
+
+div button {
+    font-size: 1.4rem;
+    padding: 15px 50px;
+    margin-top: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 6px;
+    background-color: #F9CE00;
+}
+
+div button:hover {
+    background-color: #F7B32D;
+}
